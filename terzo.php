@@ -77,13 +77,11 @@ $posts = [
     
     <?php 
 
-        // foreach($arrays as $array) {
-        //     echo implode(',', $array) . '<br>';
-        // }
-
-        foreach($posts as $array) {
-            echo implode(',', $array) . '<br>';
+        foreach($posts as $value) {
+             echo implode(',', $value) . '<br>';
         }
+
+        
 
 
     ?>
