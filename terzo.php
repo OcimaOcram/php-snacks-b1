@@ -41,26 +41,6 @@ $posts = [
 ];
 
 
-// $arrays = [
-//             [
-//                 'test1',
-//                 'test2',
-
-//             ],
-//             [
-//                 'test3',
-//                 'test4'
-//             ],
-//             [
-//                 'test3',
-//                 'test4'
-//             ],
-//         ];
-
-
-
-
-
 
 ?>
 <!DOCTYPE html>
@@ -77,11 +57,23 @@ $posts = [
     
     <?php 
 
-        foreach($posts as $value) {
-             echo implode(',', $value) . '<br>';
-        }
+        $keys = array_keys($posts)
+        for ($i=0; $i < count($posts); $i++);{ 
+            $posts = $posts[$keys[$i]];
+            echo "<div> {$keys[$i]}</div>";
+            for ($j=0; $j < count($posts); $j++){
+                $page = $post[$j];
+                echo "<div> {$page}</div>";
 
-        
+
+
+
+
+
+
+
+            }
+        }
 
 
     ?>
